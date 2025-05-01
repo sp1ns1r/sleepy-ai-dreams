@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-
 const Hero: React.FC = () => {
-  return (
-    <section className="pt-24 pb-12 md:pt-32 md:pb-16 dreamcloud">
+  return <section className="pt-24 pb-12 md:pt-32 md:pb-16 dreamcloud">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -19,24 +16,14 @@ const Hero: React.FC = () => {
               <Button size="lg" className="px-6 py-6 text-lg bg-dreamy-purple hover:bg-dreamy-purple/90">
                 Get Your Personalized Sleep Plan
               </Button>
-              <Button variant="outline" size="lg" className="px-6 py-6 text-lg border-dreamy-purple text-dreamy-purple">
-                Learn More
-              </Button>
+              
             </div>
           </div>
           <div className="w-full lg:w-1/2 mt-8 lg:mt-0 relative">
             <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
-              <img 
-                src="https://source.unsplash.com/S9NQnIV4zOI" 
-                alt="Peaceful sleeping baby" 
-                className="w-full h-auto object-cover rounded-t-2xl" 
-              />
+              <img src="https://source.unsplash.com/S9NQnIV4zOI" alt="Peaceful sleeping baby" className="w-full h-auto object-cover rounded-t-2xl" />
               <div className="absolute bottom-0 right-0 w-1/2 h-1/2">
-                <img 
-                  src="https://source.unsplash.com/a82uYdyJm8Q" 
-                  alt="Well-rested parents" 
-                  className="w-full h-full object-cover border-4 border-white rounded-2xl shadow-lg" 
-                />
+                <img src="https://source.unsplash.com/a82uYdyJm8Q" alt="Well-rested parents" className="w-full h-full object-cover border-4 border-white rounded-2xl shadow-lg" />
               </div>
             </div>
             <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-dreamy-lightpurple rounded-full z-[-1]"></div>
@@ -44,8 +31,6 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
