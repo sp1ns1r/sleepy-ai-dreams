@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import PainPoints from '@/components/PainPoints';
+import HowItWorks from '@/components/HowItWorks';
+import Features from '@/components/Features';
+import Comparison from '@/components/Comparison';
+import Testimonials from '@/components/Testimonials';
+import TrustBuilders from '@/components/TrustBuilders';
+import Pricing from '@/components/Pricing';
+import FAQ from '@/components/FAQ';
+import CallToAction from '@/components/CallToAction';
+import Footer from '@/components/Footer';
+
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <PainPoints />
+      <HowItWorks />
+      <Features />
+      <Comparison />
+      <Testimonials />
+      <TrustBuilders />
+      <Pricing />
+      <FAQ />
+      <CallToAction />
+      <Footer />
     </div>
   );
 };
