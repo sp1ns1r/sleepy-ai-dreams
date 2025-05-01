@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import KeyValueProps from '@/components/KeyValueProps';
 import PainPoints from '@/components/PainPoints';
 import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
@@ -17,6 +18,7 @@ const Index: React.FC = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <KeyValueProps />
       <PainPoints />
       <HowItWorks />
       <Features />
