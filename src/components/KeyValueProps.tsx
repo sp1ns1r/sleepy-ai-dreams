@@ -20,7 +20,7 @@ const valueProps = [
   },
   {
     title: "Affordable Solution",
-    description: "90% less than traditional sleep consultants with better results",
+    description: "Up to 90% less than traditional sleep consultants",
     icon: <DollarSign className="h-6 w-6 text-dreamy-purple" />
   }
 ];
