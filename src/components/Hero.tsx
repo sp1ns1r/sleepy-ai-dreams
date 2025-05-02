@@ -1,7 +1,18 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { ChevronDown } from 'lucide-react';
+
 const Hero: React.FC = () => {
-  return <section className="pt-24 pb-12 md:pt-32 md:pb-16 dreamcloud">
+  const scrollToNextSection = () => {
+    const keyValueProps = document.getElementById('key-value-props');
+    if (keyValueProps) {
+      keyValueProps.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section className="pt-24 pb-12 md:pt-32 md:pb-16 dreamcloud relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -16,7 +27,7 @@ const Hero: React.FC = () => {
               <Button size="lg" className="px-6 py-6 text-lg bg-dreamy-purple hover:bg-dreamy-purple/90">
                 Get Your Personalized Sleep Plan
               </Button>
-              
+              <p className="text-sm text-gray-500">60-day money-back guarantee</p>
             </div>
           </div>
           <div className="w-full lg:w-1/2 mt-8 lg:mt-0 relative">
@@ -31,6 +42,19 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>;
+      
+      {/* Scroll indicator */}
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center animate-bounce">
+        <button 
+          onClick={scrollToNextSection}
+          className="p-2 rounded-full bg-white/80 shadow-md hover:bg-white transition-colors"
+          aria-label="Scroll down to learn more"
+        >
+          <ChevronDown className="h-6 w-6 text-dreamy-purple" />
+        </button>
+      </div>
+    </section>
+  );
 };
+
 export default Hero;

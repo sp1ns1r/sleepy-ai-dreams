@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import KeyValueProps from '@/components/KeyValueProps';
+import TrustIndicators from '@/components/TrustIndicators';
 import PainPoints from '@/components/PainPoints';
 import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
@@ -19,6 +20,7 @@ const Index: React.FC = () => {
       <Navbar />
       <Hero />
       <KeyValueProps />
+      <TrustIndicators />
       <PainPoints />
       <HowItWorks />
       <Features />

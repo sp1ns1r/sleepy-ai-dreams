@@ -12,9 +12,15 @@ const CallToAction: React.FC = () => {
             Join thousands of well-rested families who have transformed their nights with DreamyBaby
           </p>
           
-          <Button size="lg" className="px-8 py-6 text-lg bg-dreamy-purple hover:bg-dreamy-purple/90">
-            Create My Sleep Plan Now
-          </Button>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <Button size="lg" className="px-8 py-6 text-lg bg-dreamy-purple hover:bg-dreamy-purple/90">
+              Create My Sleep Plan Now
+            </Button>
+            
+            <Button variant="outline" size="lg" className="px-8 py-6 text-lg border-dreamy-purple text-dreamy-purple hover:bg-dreamy-purple/10">
+              View Sample Plan
+            </Button>
+          </div>
           
           <p className="mt-6 text-gray-600">
             <span className="font-medium">60-day money-back guarantee</span> if you're not completely satisfied

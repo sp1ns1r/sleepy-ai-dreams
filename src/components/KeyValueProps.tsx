@@ -27,7 +27,7 @@ const valueProps = [
 
 const KeyValueProps: React.FC = () => {
   return (
-    <section className="py-12 bg-white border-b border-gray-100">
+    <section id="key-value-props" className="py-12 bg-white border-b border-gray-100 scroll-mt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-2xl md:text-3xl font-bold text-dreamy-purple mb-12">
           Quality sleep training — faster, better, cheaper
@@ -35,7 +35,10 @@ const KeyValueProps: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {valueProps.map((prop, index) => (
-            <div key={index} className="flex flex-col items-center md:items-start">
+            <div 
+              key={index} 
+              className="flex flex-col items-center md:items-start bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100"
+            >
               <div className="bg-dreamy-lightpurple/30 p-3 rounded-full mb-4">
                 {prop.icon}
               </div>
